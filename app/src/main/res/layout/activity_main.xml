@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/layor_background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.calculator.MainActivity"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:weightSum="1"
+    android:background="#2222">
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton_background"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="28dp"
+        android:id="@+id/screen"
+        android:textAlignment="viewEnd"
+        android:layout_weight="0.66"
+        android:maxHeight="3dp"
+        android:longClickable="false" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_sin"
+            android:text="Sin"
+            android:background="#df8d8d"
+            android:allowUndo="false" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_cos"
+            android:text="Cos"
+            android:background="#df8d8d" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_tan"
+            android:text="Tan"
+            android:background="#df8d8d" />
+        <Button
+
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_log"
+            android:text="Log"
+            android:background="#df8d8d" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_ln"
+            android:text="ln"
+            android:background="#df8d8d" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_seven"
+            android:text="7"
+            android:background="#d451cbe6" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_eight"
+            android:text="8"
+            android:background="#d43dde19" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_nine"
+            android:text="9"
+            android:background="#d451cbe6" />
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_back"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:baselineAlignBottom="false"
+            android:background="#77e58d00" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_ac"
+            android:text="AC"
+            android:background="#77e58d00" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_four"
+            android:text="4"
+            android:background="#d43dde19" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_five"
+            android:text="5"
+            android:background="#d451cbe6" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_six"
+            android:text="6"
+            android:background="#d43dde19" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_multiply"
+            android:text="x"
+            android:background="#77e58d00" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_divide"
+            android:text="÷"
+            android:background="#77e58d00" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_one"
+            android:text="1"
+            android:background="#d451cbe6" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_two"
+            android:text="2"
+            android:background="#d43dde19" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_three"
+            android:text="3"
+            android:background="#d451cbe6" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_add"
+            android:text="+"
+            android:background="#77e58d00" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_subtract"
+            android:text="-"
+            android:background="#77e58d00" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_zero"
+            android:text="0"
+            android:background="#d451cbe6" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_point"
+            android:text="."
+            android:background="#3333" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_answer"
+            android:text="ANS"
+            android:background="#df8d8d" />
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_enter"
+            android:text="ENTER"
+            android:background="#9ce65800"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>
